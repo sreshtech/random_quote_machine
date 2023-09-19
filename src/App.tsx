@@ -19,7 +19,7 @@ const transition= "all 1s";
 
 function App() {
   const [quote, setQuote] = useState<Quote>(getRandomQuote());
-  const[randomColor,setRandomColr]=useState<string>(getRandomColor());
+  const[randomColor,setRandomColor]=useState<string>(getRandomColor());
    
     
   const changeQuote= () => {
