@@ -39,11 +39,7 @@ function App() {
           <h4 id="author">- {quote.author}</h4>
         </div>
         <div className="buttons">
-          <a href="twitter.com/intent/tweet" id="tweet-quote"
-          style={{
-            backgroundColor: randomColor,
-            marginRight: "20px",transition
-          }}>
+          <a href={`https://twitter.com/intent/tweet?text=${quote.quote} - ${quote.author}`} id="tweet-quote" style={{backgroundColor: randomColor, marginRight: "20px", transition}}>
             <FaTwitter color="white"/>
           </a>
           <button id="new-quote" onClick={changeQuote} style={{backgroundColor: randomColor}}>Change Quote</button>
